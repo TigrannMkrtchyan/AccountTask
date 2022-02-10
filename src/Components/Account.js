@@ -7,8 +7,9 @@ const Account = ({ data }) => {
   const Column = Table;
   const params = useParams();
   const info = [data.find((Element) => Element.id == params.id)];
-console.log(info) 
+  
   return (
+   
     <div>
       <Table dataSource={info}>
         <Column title="ID" dataIndex="id" key="id" />

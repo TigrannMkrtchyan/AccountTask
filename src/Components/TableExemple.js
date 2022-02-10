@@ -7,9 +7,6 @@ import { Link, } from "react-router-dom";
 const TableExemple = ({data}) => {
   const  Column = Table;
 
- fetch('https://mockend.com/rawmediamarketing/vue-assignment-api/accounts')
- .then(response => response.json())
- .then(json => setInformation(json))
  
   return (
     <div>
