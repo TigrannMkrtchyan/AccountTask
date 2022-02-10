@@ -3,13 +3,16 @@ import { Table, Tag, Space } from "antd";
 import "antd/dist/antd.css";
 import { Link } from "react-router-dom";
 import { contextComp } from "./Context";
+import { useContext } from "react";
 
-const TableExemple = ({ data }) => {
-  const { Column } = Table;
+const { Column } = Table;
+
+const TableExemple = () => {
+  const information = React.useContext(contextComp);
 
   return (
     <div>
-      <Table dataSource={data.info}>
+      <Table dataSource={information.info}>
         <Column title="ID" dataIndex="id" key="id" />
         <Column title="Name" dataIndex="Name" key="Name" />
         <Column title="Created On" dataIndex="createdAt" key="createdAt" />

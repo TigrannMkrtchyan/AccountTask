@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Table, Tag, Space } from "antd";
 import "antd/dist/antd.css";
 import { useParams } from "react-router-dom";
+import { contextComp } from "./Context";
 
-const Account = ({ data }) => {
-  const { Column } = Table;
+const { Column } = Table;
+
+const Account = () => {
+  const information = React.useContext(contextComp);
+
   const params = useParams();
-  const info = [data.info.find((Element) => Element.id == params.id)];
+  const info = [information.info.find((Element) => Element.id == params.id)];
   return (
     <div>
       <Table dataSource={info}>
