@@ -10,7 +10,7 @@ const Account = () => {
   const information = React.useContext(contextComp);
 
   const params = useParams();
-  const info = [information.info.find((Element) => Element.id == params.id)];
+  const info = [information.acounts.find((Element) => Element.id == params.id)];
   return (
     <div>
       <Table dataSource={info}>

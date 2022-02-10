@@ -12,7 +12,7 @@ const TableExemple = () => {
 
   return (
     <div>
-      <Table dataSource={information.info}>
+      <Table dataSource={information.acounts}>
         <Column title="ID" dataIndex="id" key="id" />
         <Column title="Name" dataIndex="Name" key="Name" />
         <Column title="Created On" dataIndex="createdAt" key="createdAt" />

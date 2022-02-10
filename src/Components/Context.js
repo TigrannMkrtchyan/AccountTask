@@ -10,9 +10,9 @@ export const Context = ({ children }) => {
       .then((json) => setInformation(json));
   }, []);
 
-  const tableInfo = { info: information, state: setInformation };
+  const data= { acounts: information };
 
-  return <contextComp.Provider value={tableInfo}> {children}</contextComp.Provider>;
+  return <contextComp.Provider value={data}> {children}</contextComp.Provider>;
 };
 
 
