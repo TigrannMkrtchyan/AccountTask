@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/Account" element={<TableExemple  data={information}   />  }  />
-        <Route path='/Account:id' element={<Account data={information}/>}/>
+        <Route path='/Account/:id' element={<Account data={information}/>}/>
         <Route path="*" element={<Navigate replace to="/account" />} />
       </Routes>
     </BrowserRouter>,

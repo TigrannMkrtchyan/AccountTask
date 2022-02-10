@@ -21,7 +21,7 @@ const TableExemple = ({data}) => {
           key="action"
           render={(text, record) => (
             <Space size="middle">
-              <Link to={`/Account${record.id}`  }>View</Link> 
+              <Link to={`/Account/${record.id}`  }>View</Link> 
             </Space>
           )}
         />

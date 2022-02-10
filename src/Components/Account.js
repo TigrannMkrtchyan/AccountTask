@@ -7,7 +7,6 @@ const Account = ({ data }) => {
   const Column = Table;
   const params = useParams();
   const info = [data.find((Element) => Element.id == params.id)];
-  
   return (
    
     <div>
