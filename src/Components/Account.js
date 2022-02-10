@@ -4,9 +4,9 @@ import "antd/dist/antd.css";
 import { useParams } from "react-router-dom";
 
 const Account = ({ data }) => {
-  const {Column} = Table;
+  const { Column } = Table;
   const params = useParams();
-  const info = [data.find((Element) => Element.id == params.id)];
+  const info = [data.info.find((Element) => Element.id == params.id)];
   return (
     <div>
       <Table dataSource={info}>

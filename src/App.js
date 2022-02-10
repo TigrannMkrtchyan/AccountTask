@@ -1,15 +1,11 @@
 import TableExemple from "./Components/TableExemple";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Account from "./Components/Account";
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
+import { contextComp } from "./Components/Context";
 
 function App() {
-  const [information, setInformation] = useState([]);
-  useEffect(() => {
-    fetch("https://mockend.com/rawmediamarketing/vue-assignment-api/accounts")
-      .then((response) => response.json())
-      .then((json) => setInformation(json));
-  }, []);
+  const information = React.useContext(contextComp);
 
   return (
     <>
@@ -23,7 +19,6 @@ function App() {
           <Route path="*" element={<Navigate replace to="/account" />} />
         </Routes>
       </BrowserRouter>
-      ,
     </>
   );
 }
