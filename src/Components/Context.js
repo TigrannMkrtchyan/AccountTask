@@ -10,7 +10,7 @@ export const Context = ({ children }) => {
       .then((json) => setInformation(json));
   }, []);
 
-  const data= { acounts: information };
+  const data= { accounts: information };
 
   return <contextComp.Provider value={data}> {children}</contextComp.Provider>;
 };

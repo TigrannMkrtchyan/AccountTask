@@ -7,12 +7,12 @@ import { useContext } from "react";
 
 const { Column } = Table;
 
-const TableExemple = () => {
+const TableExample = () => {
   const information = React.useContext(contextComp);
 
   return (
     <div>
-      <Table dataSource={information.acounts}>
+      <Table dataSource={information.accounts}>
         <Column title="ID" dataIndex="id" key="id" />
         <Column title="Name" dataIndex="Name" key="Name" />
         <Column title="Created On" dataIndex="createdAt" key="createdAt" />
@@ -32,4 +32,4 @@ const TableExemple = () => {
   );
 };
 
-export default TableExemple;
+export default TableExample;
