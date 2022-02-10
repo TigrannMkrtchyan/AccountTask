@@ -1,13 +1,10 @@
 import { Table, Tag, Space } from "antd";
 import "antd/dist/antd.css";
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 
+const TableExemple = ({ data }) => {
+  const Column = Table;
 
-
-const TableExemple = ({data}) => {
-  const  Column = Table;
-
- 
   return (
     <div>
       <Table dataSource={data}>
@@ -21,12 +18,11 @@ const TableExemple = ({data}) => {
           key="action"
           render={(text, record) => (
             <Space size="middle">
-              <Link to={`/Account/${record.id}`  }>View</Link> 
+              <Link to={`/Account/${record.id}`}>View</Link>
             </Space>
           )}
         />
       </Table>
-      
     </div>
   );
 };
