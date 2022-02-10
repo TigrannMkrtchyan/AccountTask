@@ -3,7 +3,7 @@ import "antd/dist/antd.css";
 import { Link } from "react-router-dom";
 
 const TableExemple = ({ data }) => {
-  const Column = Table;
+  const {Column} = Table;
 
   return (
     <div>
