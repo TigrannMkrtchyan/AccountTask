@@ -1,21 +1,16 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { isMock } from "../Shared/isMock";
-import mockData from "../../Services/data.json"
+import mockData from "../../Services/data.json";
 import { getAccounts } from "../Shared/serverData";
-
+import { dataFilter } from "../Services/AccountsService";
 
 export const AccountContext = React.createContext();
 
-
-
 export const Context = ({ children }) => {
   const [account, setAccounts] = useState([]);
-  useEffect(() => {return isMock() ? setAccounts(mockData): getAccounts().then((json) => (setAccounts(json))) ;
-    },[])
-
-    console.log(account)
-    
- 
+  useEffect(() => {
+    dataFilter().then((json) => setAccounts(json));
+  }, []);
 
   const data = { accounts: account };
 

@@ -1,10 +1,9 @@
 import React from "react";
-import Accounts  from "./Components/Accounts";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Accounts from "./Components/Accounts";
 import Account from "./Components/Account";
 
-
-const App=()=> {
+const App = () => {
   return (
     <>
       <BrowserRouter>
@@ -16,6 +15,6 @@ const App=()=> {
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;
