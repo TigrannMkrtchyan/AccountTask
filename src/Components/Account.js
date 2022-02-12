@@ -11,7 +11,6 @@ const Account = () => {
 
   const {id} = useParams();
   const info = accounts.find((element) => element.id == id);
-  console.log(info)
   return (
     <div>
       
