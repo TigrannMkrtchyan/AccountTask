@@ -1,14 +1,14 @@
 import React from "react";
 import { Table, Tag, Space } from "antd";
-import "antd/dist/antd.css";
 import { Link } from "react-router-dom";
-import { contextComp } from "./Context";
+import { AccountContext } from "./Context/Context";
 import { useContext } from "react";
+import "antd/dist/antd.css";
 
 const { Column } = Table;
 
 const TableExample = () => {
-  const information = React.useContext(contextComp);
+  const information = React.useContext(AccountContext);
 
   return (
     <div>

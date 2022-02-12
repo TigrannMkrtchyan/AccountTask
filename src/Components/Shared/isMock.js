@@ -1,0 +1,1 @@
+export const isMock=()=>{return process.env.REACT_APP_MY_KEY === "true"}

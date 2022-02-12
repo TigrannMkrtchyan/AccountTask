@@ -1,25 +1,29 @@
 import React, { useContext } from "react";
-import { Table, Tag, Space } from "antd";
+import { Table, Card } from "antd";
 import "antd/dist/antd.css";
 import { useParams } from "react-router-dom";
-import { contextComp } from "./Context";
+import { AccountContext } from "./Context/Context";
 
-const { Column } = Table;
+
 
 const Account = () => {
-  const information = React.useContext(contextComp);
+  const {accounts} = React.useContext(AccountContext);
 
-  const params = useParams();
-  const info = [information.accounts.find((Element) => Element.id == params.id)];
+  const {id} = useParams();
+  const info = accounts.find((element) => element.id == id);
+  console.log(info)
   return (
     <div>
-      <Table dataSource={info}>
-        <Column title="ID" dataIndex="id" key="id" />
-        <Column title="Name" dataIndex="Name" key="Name" />
-        <Column title="Created On" dataIndex="createdAt" key="createdAt" />
-        <Column title="Owner" dataIndex="owner" key="owner" />
-        <Column title="Updated On" dataIndex="CreatedAt" key="createdAt" />
-      </Table>
+      
+
+    <Card title={info.id}  style={{ width: 300 }}>
+      <p>{info.createdAt}</p>
+      <p>{info.owner}</p>
+      <p>{info.updatedAt}</p>
+    </Card>
+
+
+
     </div>
   );
 };
