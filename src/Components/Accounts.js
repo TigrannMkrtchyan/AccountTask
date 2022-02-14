@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import { Table, Space } from 'antd'
-import { Link } from 'react-router-dom'
-import { AccountContext } from './Context/Context'
-import 'antd/dist/antd.css'
+import React, { useContext } from "react";
+import { Table, Space } from "antd";
+import { Link } from "react-router-dom";
+import { AccountContext } from "./Context/Context";
+import "antd/dist/antd.css";
 
-const { Column } = Table
+const { Column } = Table;
 
 const TableExample = () => {
-  const information = useContext(AccountContext)
+  const information = useContext(AccountContext);
 
   return (
     <div>
@@ -28,7 +28,7 @@ const TableExample = () => {
         />
       </Table>
     </div>
-  )
-}
+  );
+};
 
-export default TableExample
+export default TableExample;
