@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import { getAccounts } from "../Services/AccountsService";
 
 export const AccountContext = createContext();
@@ -11,7 +11,5 @@ export const AccountsContext = ({ children }) => {
 
   const data = { accounts: account };
 
-  return (
-    <AccountContext.Provider value={data}> {children}</AccountContext.Provider>
-  );
+  return <AccountContext.Provider value={data}> {children}</AccountContext.Provider>;
 };
