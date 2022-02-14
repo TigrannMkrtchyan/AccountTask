@@ -9,7 +9,7 @@ const Account = () => {
 
   const { id } = useParams();
   const info = useMemo(
-    () => accounts.find((element) => element.id === id),
+    () => accounts.find((element) => element.id == id),
     [accounts]
   );
   return (

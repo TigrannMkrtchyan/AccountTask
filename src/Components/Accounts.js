@@ -15,8 +15,7 @@ const TableExample = () => {
         <Column title="ID" dataIndex="id" key="id" />
         <Column title="Name" dataIndex="Name" key="Name" />
         <Column title="Created On" dataIndex="createdAt" key="createdAt" />
-        <Column title="Owner" dataIndex="owner" key="owner" />
-
+        <Column title="Owner" dataIndex="owner" key="owner" />=
         <Column
           title="Action"
           key="action"
