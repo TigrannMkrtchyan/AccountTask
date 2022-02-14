@@ -8,7 +8,7 @@ const Account = () => {
   const { accounts } = useContext(AccountContext);
 
   const { id } = useParams();
-  const info = useMemo(()=> accounts.find((element) => element.id == id),[element] );
+  const info = useMemo(()=> accounts.find((element) => element.id == id),[accounts] );
   return (
     <div>
       <Card title={info.id} style={{ width: 300 }}>
