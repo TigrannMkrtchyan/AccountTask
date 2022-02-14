@@ -1,5 +1,5 @@
 [
-{
+  {
     "accountId": 34184906,
     "createdAt": "2020-02-18T04:09:26Z",
     "id": 80,
@@ -10,8 +10,8 @@
     "title": "Video Ads",
     "updatedAt": "2018-04-22T21:02:38Z",
     "views": 88
-},
-{
+  },
+  {
     "accountId": 37045661,
     "createdAt": "2011-04-13T14:38:10Z",
     "id": 81,
@@ -22,8 +22,8 @@
     "title": "Pragmatic Ads",
     "updatedAt": "2020-11-26T04:47:03Z",
     "views": 20
-},
-{
+  },
+  {
     "accountId": 31420393,
     "createdAt": "2021-09-20T11:41:01Z",
     "id": 82,
@@ -34,8 +34,8 @@
     "title": "Pragmatic Ads",
     "updatedAt": "2016-04-21T11:35:22Z",
     "views": 77
-},
-{
+  },
+  {
     "accountId": 36942523,
     "createdAt": "2019-03-28T09:45:38Z",
     "id": 83,
@@ -46,8 +46,8 @@
     "title": "Playable Ads",
     "updatedAt": "2015-03-28T09:13:35Z",
     "views": 14
-},
-{
+  },
+  {
     "accountId": 37520691,
     "createdAt": "2017-12-31T01:18:22Z",
     "id": 84,
@@ -58,8 +58,8 @@
     "title": "Pragmatic Ads",
     "updatedAt": "2012-03-28T07:40:11Z",
     "views": 83
-},
-{
+  },
+  {
     "accountId": 32177736,
     "createdAt": "2012-05-26T21:55:32Z",
     "id": 85,
@@ -70,5 +70,5 @@
     "title": "Playable Ads",
     "updatedAt": "2013-07-29T15:00:48Z",
     "views": 66
-}
+  }
 ]
