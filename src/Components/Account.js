@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { Table, Card } from "antd";
 import { useParams } from "react-router-dom";
 import { AccountContext } from "./Context/Context";
 import "antd/dist/antd.css";
 
 const Account = () => {
-  const { accounts } = React.useContext(AccountContext);
+  const { accounts } = useContext(AccountContext);
 
   const { id } = useParams();
-  const info = accounts.find((element) => element.id == id);
+  const info = useMemo(()=> accounts.find((element) => element.id == id),[element] );
   return (
     <div>
       <Card title={info.id} style={{ width: 300 }}>

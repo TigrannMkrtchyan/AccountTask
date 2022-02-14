@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import {Context} from "./Components/Context/Context"
+import { AccountsContext } from "./Components/Context/Context"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context>
+    <AccountsContext>
     <App />
-    </Context>
+    </AccountsContext>
   </React.StrictMode>,
   document.getElementById("root")
 );

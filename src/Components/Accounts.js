@@ -8,7 +8,7 @@ import "antd/dist/antd.css";
 const { Column } = Table;
 
 const TableExample = () => {
-  const information = React.useContext(AccountContext);
+  const information = useContext(AccountContext);
 
   return (
     <div>
